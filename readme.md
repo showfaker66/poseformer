@@ -18,7 +18,7 @@ If Ground truth 2D pose as input:
 
 python run_poseformer.py -k gt
 
-### 4、Test 
+## 4、Test 
 
 训练好的权重放在./checkpoint directory
 
@@ -34,3 +34,5 @@ python run_poseformer.py -k gt -arc 3,3,3,3 -c checkpoint --evaluate best_epoch.
 
 运行 ffmpeg -i figure/output.mp4 -ss 00:00 -t 6 -f image2 -vf fps=fps=25 figure/yiba_frame_%02d.png
 
+## 5、demo
+run demo/vis.py  
